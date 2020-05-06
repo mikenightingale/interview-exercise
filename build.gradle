@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+wrapper {
+    gradleVersion = "${gradle_version}"
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.27.0'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.11.1'
+}
